@@ -9,6 +9,8 @@ Due to the similarity of VAT-SFR and KtV data with PPPW data, we used them as th
 
 
 
+![Alt text](images/image2020-10-16_12-34-9.png?raw=true "Title")
+
 
 
 ## Algorithm and Logic
