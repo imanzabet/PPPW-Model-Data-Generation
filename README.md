@@ -17,9 +17,8 @@ Due to the similarity of VAT-SFR and KtV data with PPPW data, we used them as th
 In order to calculate "Age", the calculation was done based on the difference of patient birthdate and last day of month. For calculating "Waitlist Flag", a dummy variable of "W_End" was defined that was a result of calculating of some of the exceptions of UNOS dataset. The pseudo code below, shows the "W_End" calculation procedure. After that the "W_End" variable was used for generating "Waitlist Flag" column and set the flag to either "True" or "False".
 
 
-
-
-
+![Alt text](images/1.png?raw=true "Title")
+![Alt text](images/2.png?raw=true "Title")
 
 
 ### Handling UNOS dataset duplications
