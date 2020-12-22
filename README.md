@@ -1,5 +1,7 @@
 # PPPW-Model-Data-Generation
 ## Overview
+his project aims to generate synthetic data for input of PPPW statistical model. The code accepts both VAT-SFR (main_vat.py) and KTV (main_ktv) dataset as input and using data transform methods to combine them with UNOS and Patient DOB dataset, in order to transform them into a useful dataset for PPPW model. 
+
 The PPPW statistical model requires millions of records of data in order to run properly and give accurate results. The GEE model typically works with  a large number of input data records in order to estimate correctly.
 
 ## Procedure
