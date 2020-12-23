@@ -30,6 +30,6 @@ UNOS datasets consists of few records of duplications for a given patient_id, wh
 There are exceptions have been seen in UNOS referring to the patients who have "rmvd_dt" date later than their "death_dt". In those cases we need to correct this based on whichever comes sooner and these adjustments included in the dummy "W_End" variable.
 
 
-## Reference:
+## Note:
 This code has been optimized to handle over 10 million records of dataset efficiently using Pandas DataFrame. You can find more information in my answer here:
 https://stackoverflow.com/a/64177887/1361125 
