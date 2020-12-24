@@ -11,14 +11,17 @@ class PPPW_Generator(DfProcss):
         self.pre_processing()
 
     def pre_processing(self):
+        print('unos_prep ...')
         self.unos_prep()
         # self.unos = pd.read_csv(self.data_path + 'unos_new.csv')
+        
+        print('unos_merge ...')
         self.data = self.unos_merge(self.iter_methond, file = 'dfs_unos_merge_prep_')
         # self.data = pd.read_csv(self.data_path + 'dfs_unos_merge_prep_all.csv')
 
     def processings(self, data):
         self.data = data
-
+        print('age calculations ...')
         self.data = self.df_age_calc(file = 'dfs_age_prep_')
         # self.data = pd.read_csv(self.data_path + 'dfs_age_prep_all.csv')
 
@@ -27,7 +30,7 @@ class PPPW_Generator(DfProcss):
         self.data['Aux_Wl_Flag'] = None
         self.data = self.data.replace({np.nan: None})
         self.unos = self.unos.replace({np.nan: None})
-
+        print('waitlist calculations ...')
         self.data  = self.waitlist_calc(file = 'dfs_prep_')
         # self.data = pd.read_csv(self.data_path + 'dfs_prep_all.csv')
 

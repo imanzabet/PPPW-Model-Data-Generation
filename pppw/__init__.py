@@ -26,22 +26,22 @@ def is_in_ipynb():
 if is_in_ipynb():
     import os, sys
     FLAG_Ipynb = True
-    module_path = os.path.abspath(os.path.join('./pda'))
-    if module_path not in sys.path:
-        sys.path.append(module_path)
-        # print(module_path + ' is set for notebook!')
-    else:
-        print(module_path + ' found in sys.path')
-    module_path = os.path.abspath(os.path.join('../..'))
-    if module_path not in sys.path:
-        sys.path.append(module_path)
-        # print(module_path + ' is set for notebook!')
-    else:
-        print(module_path + ' found in sys.path')
+    module_path = os.path.abspath("./pppw/")
+#     if module_path not in sys.path:
+#         sys.path.append(module_path)
+#         # print(module_path + ' is set for notebook!')
+#     else:
+#         print(module_path + ' found in sys.path')
+#     module_path = os.path.abspath(os.path.join('../..'))
+#     if module_path not in sys.path:
+#         sys.path.append(module_path)
+#         # print(module_path + ' is set for notebook!')
+#     else:
+#         print(module_path + ' found in sys.path')
 else:
     FLAG_Ipynb = False
-
-config_file = 'config.ini'
+    module_path = os.path.abspath("./")
+config_file = os.path.join(module_path,'config.ini')
 if parser.read(config_file)==[]:
     if FLAG_Ipynb:
         if parser.read(config_file) == []:
